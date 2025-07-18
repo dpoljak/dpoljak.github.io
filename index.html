@@ -7,17 +7,198 @@
       href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
-    <title>Dario</title>
+    <title>Dario Poljak</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #fafafa;
+      }
+      
+      .container {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+      
+      .header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      
+      .name {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+        color: #2c3e50;
+      }
+      
+      .tagline {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        margin-bottom: 2rem;
+      }
+      
+      .section {
+        margin-bottom: 2.5rem;
+      }
+      
+      .section h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 0.5rem;
+      }
+      
+      .work-item {
+        margin-bottom: 1.5rem;
+      }
+      
+      .work-title {
+        font-weight: 600;
+        color: #2c3e50;
+      }
+      
+      .work-company {
+        color: #3498db;
+        font-weight: 500;
+      }
+      
+      .work-date {
+        color: #7f8c8d;
+        font-size: 0.9rem;
+      }
+      
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+      
+      .tech-tag {
+        background: #ecf0f1;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        font-size: 0.85rem;
+        color: #2c3e50;
+      }
+      
+      .links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      
+      .link {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      
+      .link:hover {
+        color: #2980b9;
+      }
+      
+      .footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #ecf0f1;
+        color: #7f8c8d;
+        font-size: 0.9rem;
+      }
+      
+      @media (max-width: 600px) {
+        .name {
+          font-size: 2rem;
+        }
+        
+        .links {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header class="max-width-4 mx-auto">
-      <h1 class="h1">Hello world!</h1>
-      <hr />
-      <h2>My name is Dario and this is my site</h2>
-      <h3>
-        It's pretty empty at the moment, but I'm working on changing that...
-      </h3>
-    </header>
+    <div class="container">
+      <header class="header">
+        <h1 class="name">Dario Poljak</h1>
+        <p class="tagline">Full Stack Engineer</p>
+      </header>
+
+      <section class="section">
+        <h2>About</h2>
+        <p>
+          I'm a full stack engineer based in Zagreb, Croatia, with a passion for building high-performance web applications and exceptional user experiences. 
+          Currently working at Optilogic, I focus on creating scalable solutions that are both fast and delightful to use.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Experience</h2>
+        <div class="work-item">
+          <div class="work-title">Full Stack Developer</div>
+          <div class="work-company">Optilogic Inc.</div>
+          <div class="work-date">Jun 2024 - Present</div>
+          <p>Building high-performance web applications for supply chain optimization, working with Python, DevOps, and modern web technologies.</p>
+        </div>
+        
+        <div class="work-item">
+          <div class="work-title">Lead Developer</div>
+          <div class="work-company">Very Big Things</div>
+          <div class="work-date">Sep 2022 - Jun 2024</div>
+          <p>Led development teams and worked on complex TypeScript projects across the full stack, mentoring developers and delivering client solutions.</p>
+        </div>
+        
+        <div class="work-item">
+          <div class="work-title">ClojureScript Frontend Developer</div>
+          <div class="work-company">Very Big Things</div>
+          <div class="work-date">Jun 2018 - Sep 2021</div>
+          <p>Developed web and mobile solutions in an agency setting, collaborating with cross-functional teams from engineering to design and product management.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Technologies</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Clojure/ClojureScript</span>
+          <span class="tech-tag">DevOps</span>
+          <span class="tech-tag">React Native</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Focus Areas</h2>
+        <p>
+          I'm passionate about creating web applications that are both performant and user-friendly. 
+          My work spans the full stack, from optimizing backend APIs to crafting smooth frontend experiences.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">Performance Optimization</span>
+          <span class="tech-tag">User Experience</span>
+          <span class="tech-tag">Full Stack Development</span>
+          <span class="tech-tag">Team Leadership</span>
+        </div>
+      </section>
+
+      <div class="links">
+        <a href="https://github.com/dpoljak/" class="link">GitHub</a>
+        <a href="https://www.linkedin.com/in/dariopoljak/" class="link">LinkedIn</a>
+      </div>
+
+      <footer class="footer">
+        <p>This site is intentionally minimal. More content coming soon...</p>
+      </footer>
+    </div>
   </body>
 </html>
